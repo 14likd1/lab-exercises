@@ -17,6 +17,8 @@ iris_df$Petal.Length.Bigger4 <- iris_df$Petal.Length > 4.0
 
 # Find the species type of the flower that has the longest Sepal length
 iris_df$Species[iris_df$Sepal.Length == max(iris_df$Sepal.Length)]
+# iris_df[iris_df$Sepal.Length == max(iris_df$Sepal.Length), ]$Species works too and is better stylistically since
+# since it works more logical
 
 # Select rows where species type is 'setosa' and Sepal.Width > 3.0
 iris_df[((iris$Species == "setosa") & iris$Sepal.Width > 3.0 ), ]
